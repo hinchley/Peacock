@@ -1,0 +1,22 @@
+define('ROOT', __DIR__);
+
+class foo {
+  // a comment with "double quotes"
+  protected $tax = array('us' => 0.1, 'au' => 0.08);
+
+  /* a multiline comment for
+     a method with a $variable */
+  public function speak($words = 'hello') {
+    $words = strtolower($words);
+    echo "Computer says:\tHowdy\n";
+    echo "You say:\t$words";
+  }
+
+  public function swallow($country = 'us') {
+    $food = file_get_contents(ROOT.'/foobar.txt');
+    if ($food != '') { // an 'inline' comment
+      $cost = (1 + 2*3 / 4) * $this->tax[$country];
+      echo "${$cost}";
+    }
+  }
+}

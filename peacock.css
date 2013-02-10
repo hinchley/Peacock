@@ -1,0 +1,44 @@
+.peacock {
+  background-color:#1d1f21;
+  color:#666;
+  padding:1em 0 1em 3em;
+}
+.peacock pre {
+  color:#ced2cf;
+  margin:.1em 0 .1em .5em;
+  white-space:pre-wrap; /* css-3 */
+  white-space:-pre-wrap; /* opera 4-6 */
+  white-space:-o-pre-wrap; /* opera 7 */
+  white-space:-moz-pre-wrap !important; /* mozilla */
+  word-wrap:break-word; /* ie5.5+ */
+}
+.peacock .comment {
+  color:#969896;
+}
+/* override variables in comments */
+.peacock .comment .squote,
+.peacock .comment .dquote,
+.peacock .comment .variable {
+  color:#969896;
+}
+.peacock .quote, .peacock .squote, .peacock .dquote {
+  color:#b5bd68;
+}
+.peacock .keyword {
+  color:#b294bb;
+}
+.peacock .function {
+  color:#81a2be;
+}
+.peacock .variable {
+  color:#cc6666;
+}
+.peacock .constant, .peacock .datatype {
+  color:#de935f;
+}
+.peacock .number {
+  color:#f0c674;
+}
+.peacock .operator {
+  color:#73c0b1;
+}

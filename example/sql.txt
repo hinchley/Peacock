@@ -1,0 +1,16 @@
+-- this is a comment about nothing
+SELECT count(*) FROM foo
+WHERE this = 'that' AND stuff = 'things';
+
+/* look, mum, a multi-line
+   comment about absolutely nothing */
+SELECT CONVERT(INT, 0xFFFFFF);
+
+CREATE TABLE `users` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(64) NOT NULL,
+  `created` DATETIME NOT NULL,
+  `updated` DATETIME NOT NULL,
+  UNIQUE (`name`),
+  PRIMARY KEY (`id`)
+) Engine=InnoDB DEFAULT CHARSET=latin1;
