@@ -110,7 +110,7 @@ return [
       type_name|typeproperty|unicode|upper|user_id|user_name|var|varp|
       xact_state|year
       )
-      (?!\w)      # if not followed by a word char
+      \w*\(       # if followed by an opening bracket
     /xi',
   'numbers' =>
     '/
